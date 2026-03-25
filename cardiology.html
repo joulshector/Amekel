@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basic Cardiology — Amekel Medical Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --primary: #062a3f;
+      --secondary: #009f6b;
+      --accent: #00d48f;
+      --bg-soft: #f4f5f7;
+      --bg-med: #eef7f3;
+      --text-main: #2b2f33;
+      --text-muted: #6b7280;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg-soft);
+      color: var(--text-main);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #d7dde3;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1.5rem;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .logo span {
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--bg-med);
+      padding: 4rem 0;
+      border-bottom: 1px solid #d7dde3;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 420px;
+    }
+
+    .avatar {
+      width: 260px;
+      height: 260px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 6px solid var(--secondary);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.25);
+      margin-left: auto;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid #d7dde3;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ARTICLES SECTION */
+    .articles-title {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-left: 6px solid var(--secondary);
+      padding-left: 0.75rem;
+    }
+
+    /* BACK BUTTON */
+    .back-btn {
+      background: var(--secondary);
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 3rem;
+    }
+
+    footer {
+      background: #020617;
+      color: #9ca3af;
+      padding: 1.5rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">Amekel <span>Crypto Compass</span> & Medical Tips</div>
+    <nav>
+      <ul>
+        <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
+        <li><a href="cardiology.html">Cardiology</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <h1 class="hero-title">Basic Cardiology</h1>
+      <p class="hero-subtitle">
+        Clear, responsible information to help you understand how your heart works and how to protect it.
+      </p>
+    </div>
+
+    <div class="avatar">
+      <img src="img/perfil.jpg" alt="Profile photo">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- ORIGINAL CARDS -->
+  <h2 class="section-title">How the Heart Works</h2>
+  <div class="cards">
+    <div class="card">
+      <h3 class="card-title">The Heart as a Pump</h3>
+      <p class="card-text">Your heart is a muscular pump that circulates oxygen-rich blood throughout the body.</p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Electrical System</h3>
+      <p class="card-text">The heartbeat is controlled by electrical impulses that coordinate contraction and relaxation.</p>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Blood Flow</h3>
+      <p class="card-text">Blood moves through chambers and valves that keep circulation efficient and unidirectional.</p>
+    </div>
+  </div>
+
+  <!-- NEW ARTICLES SECTION -->
+  <h2 class="articles-title">Latest Articles</h2>
+
+  <div class="cards">
+
+    <!-- HEART PUMP -->
+    <div class="card">
+      <h3 class="card-title">The Heart as a Pump</h3>
+      <p class="card-text">
+        A simple explanation of how the heart circulates blood through the body and why this process is essential for life.
+      </p>
+      <a href="heart-pump.html" style="color: var(--secondary); font-weight: 600;">Read more →</a>
+    </div>
+
+    <!-- HYPERTENSION -->
+    <div class="card">
+      <h3 class="card-title">Hypertension — Understanding High Blood Pressure</h3>
+      <p class="card-text">
+        What hypertension is, why it matters, and how it affects the cardiovascular system.
+      </p>
+      <a href="hypertension.html" style="color: var(--secondary); font-weight: 600;">Read more →</a>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</div>
+
+<footer>
+  © 2026 Amekel Crypto Compass & Medical Tips — Informational content only, not a substitute for professional advice.
+</footer>
+
+</body>
+</html>
